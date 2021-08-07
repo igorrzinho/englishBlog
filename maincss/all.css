@@ -1,0 +1,143 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+ text-decoration:none;
+}
+ul ol li{
+    list-style: none;
+} 
+
+/*cores*/
+:root{
+    --colorWhite:#ffffff;
+   --colorBlack:#000; 
+   --color1: #012136;
+   --colorFont: #002A43; 
+   --color2:#F0F0F0;
+   --color3:#CFCFCF;
+   --color4:#919191; 
+} 
+
+/*tamno das fontes*/
+:root{
+    --normalTexto:21px;
+    --h2:35px;
+    --titulos:45px;
+    --paraInputs:14px;
+} 
+/*qualque tamanho de tela*/
+/*header*/header{
+    background-color: var(--color1);
+    color: var(--color3);
+    justify-content: space-between;
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+ a :hover{
+    background-color:var(--color3);
+    color: var(--color1);
+}
+/*body*/body{
+    background-color: var(--color2);
+}
+/*titulos*/
+.titulo1{
+    font-size: var(--h2);
+    color: var(--colorFont);
+    text-align: center;
+    margin-top: 70px;
+}
+h2{
+   font-size: 35px;
+   color: var(--colorFont);
+   text-align: center;
+   margin-top: 70px; 
+}
+/*footer*/footer{
+    background-color:var(--color1);
+    text-align: center;
+}
+footer p a{
+    color: var(--color3);
+}
+footer > p > a:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+}
+/*container*/#container{
+    background-color: var(--colorWhite);
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container p{
+    color: var(--colorFont);
+    font-size: 21px;
+    margin-top: 35px;
+}
+/*logo*/.logo{
+    font-size: 45px;
+    color: var(--color3);
+}
+#header .logo:hover{
+    background-color: var(--color3);
+    color:var(--color1);
+}
+/*menu*/#menu{
+    background-color:var(--color1);
+    color:#cfcfcf;
+}
+#menu a{
+    color: #cfcfcf;
+}
+#menu a:hover{
+    background-color: #cfcfcf;
+    color: var(--colorFont);
+}
+#menu ul{
+    display: flex;
+}
+#menu ul li{
+    margin: 10px;
+    list-style: none;
+}
+/*formulario*/#form{
+    width: 70%;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dentroForm{
+    width: 80%;
+    margin: auto;
+}
+label{
+    font-size: 21px;
+    color: var(--colorFont);
+}
+legend{
+ font-size: 35px;
+ color: var(--colorFont);
+ text-align: center;
+}
+fieldset{
+    border:2px solid var(--colorFont);
+    border-radius: 10px;    
+}
+::-webkit-input-placeholder{
+    font-size:14px;
+    color:var(--colorFont);
+}
+/*IMAGENS*/

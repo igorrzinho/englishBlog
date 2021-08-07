@@ -1,0 +1,1 @@
+window.confirm('você quer entrar mesmo?')
