@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="maincss/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="mainjs/main.js"></script>
+    <script>
+        function clicou(){
+            alert('thanks you for contactings us');
+        }
+        window.confirm('do you really want to acess the site?');
+    </script>
     <title>english blog</title>
 </head>
 <body>
@@ -17,7 +22,7 @@
             <ul>
                 <li ><a href="#"><i class="fas fa-home"></i>home</a></li>
                 <li ><a href="#aboutMe"><i class="fas fa-info-circle"></i>about me</a></li>
-                <li ><a href="#"><i class="fas fa-project-diagram"></i>projects</a></li>
+                <!--<li ><a href="#"><i class="fas fa-project-diagram"></i>projects</a></li>-->
                 <li ><a href="#form"><i class="far fa-id-card"></i>contact</a></li>
               </ul>
         </div>
@@ -25,13 +30,33 @@
     </header>
     <div id="container">
         <h2 class="titulo1">home</h2>
-        <p class="paragrafo1">Computers from a few years until today have evolved very fast, and without a doubt was the main responsible for the evolution of the 20th century. We took a huge step in all areas of Science, as well as in human relations. , image creation and ease in communication.
-           </p>
-        <figure class="imgGoogle"><img src="img/computadorGoogle.jpg" alt="" width="50%"></figure>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, nobis tempore ea sunt explicabo culpa quam? Necessitatibus eos quaerat suscipit quis cupiditate facere quas atque quia molestiae tempore. Earum distinctio labore dolorem commodi non inventore illo laborum. Omnis ad voluptas et sequi fugit unde temporibus a, aut sapiente deleniti tenetur.</p>
+        <div class="one">
+        <figure class="imgGoogle"><img src="img/computadorGoogle.jpg" alt=""></figure>
+        <p class="paragrafo1">Computers from a few years until today have evolved very fast, and without a doubt was the main responsible for the evolution of the 20th century. We took a huge step in all areas of Science, as well as in human relations. , image creation and ease in communication.</p>
+
+        </div>
+        <div class="two">
+        <p>But this was only possible because we have programming languages ​​and on this blog I'm going to convince you to learn a programming language. Maybe you don't know but every application you use or most of the websites you access are made with programming languages.</p>
+        <figure><img src="img/programação.jfif" alt=""></figure>
+        </div>
+        <p>Today we have many programming languages, like Java, C#, Python, javascript, c++, and many others, they all work with logic, one of the benefits you get with faster thinking.</p>
+        <div class="icons">
+            <figure><img src="img/cSharp.png" alt=""></figure>
+            <figure><img src="img/java.png" alt=""></figure>
+            <figure><img src="img/js.png" alt=""></figure>
+            <figure><img src="img/python.png" alt=""></figure>
+            <figure><img src="img/c++.png" alt=""></figure>
+        </div>
+
+        <p>But which programming language to start with? Before you start learning a programming language, you must understand programming logic, or look for a course that teaches both simultaneously. the language I recommend is c++ it is very similar to what we are talking about.</p>
+
+        <p>You can find several courses of any programming language for free I learned when I learned on Youtube by other sites. We have great courses on platforms that do not charge for the study and will only be charged if you want a certificate.</p>
         <div id="aboutMe">
             <h2> <i class="far fa-user"></i> about me</h2>
-            <p>Hi, I'm Igor de Jesus Silva, I'm 15 years old, studying at ETEC Maria Cristina Medeiros school. Among the subjects I like the most are: making websites, programming and digital art.  But as I intend to be a Full Stack and Design programmer, I'm not just depending on the school to learn, and I take courses over the internet, one of the ones I really liked was the softblue javascript.</p>
+        <section>
+            <p>Hi, I'm Igor de Jesus Silva, I'm 15 years old, studying at <a href="https://www.etecmcm.com.br/">ETEC Maria Cristina Medeiros </a>school. Among the subjects I like the most are: making websites, programming and digital art.  But as I intend to be a Full Stack and Design programmer, I'm not just depending on the school to learn, and I take courses over the internet, one of the ones I really liked was the softblue javascript.</p>
+            <figure><img src="img/eu.jfif" alt=""></figure>
+        </section>
         </div>
         <!--formulario--> <div id="form">
             <fieldset>
@@ -52,9 +77,9 @@
                     </div>
                     <div>
                         <label for=""><b>? </b>subject</label><br>
-                        <input type="text" placeholder="whch subject of the contact">
+                        <input type="text" placeholder="which subject of the contact">
                     </div>
-                    <button>submit</button>
+                    <button onclick="clicou()">submit</button>
                  </div>
                 </form>
             </fieldset>

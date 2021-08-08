@@ -21,6 +21,7 @@ ul ol li{
    --color2:#F0F0F0;
    --color3:#CFCFCF;
    --color4:#919191; 
+   --color5:#0032bb;
 } 
 
 /*tamno das fontes*/
@@ -43,6 +44,7 @@ ul ol li{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100000;
 }
  a :hover{
     background-color:var(--color3);
@@ -81,6 +83,7 @@ footer > p > a:hover{
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 #container p{
     color: var(--colorFont);
@@ -119,9 +122,24 @@ footer > p > a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+form{
+    text-align: center;
+}
 .dentroForm{
     width: 80%;
     margin: auto;
+}
+button{
+    width: 50px;
+    height: 30px;
+    margin: 15px;
+    color: var(--color4);
+    background-color: var(--colorFont );
+    border-radius: 5px;
+    border: 1px solid var(--color5);
+}
+input{
+    width: 100%;
 }
 label{
     font-size: 21px;
@@ -140,4 +158,48 @@ fieldset{
     font-size:14px;
     color:var(--colorFont);
 }
-/*IMAGENS*/
+/*IMAGENS*/.imgGoogle > img{
+    height:300px;
+}
+.icons > figure > img{
+    width: 100px;
+    margin: 40px;
+}
+.icons{
+    display: flex;
+}
+.icons figure img:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+/*seçoes*/.one > p {
+    margin-right:40px;
+}
+.one > img{
+    margin-left: 0px;
+}
+.one{
+    display: flex;
+}
+.two {
+    display: flex;
+}
+.two > figure >img{
+    width: 400px;
+}
+#aboutMe > section{
+    display: flex;
+}
+#aboutMe > section > figure > img{
+    height: 300px;
+}
+#aboutMe section a{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+@media screen and (max-width: 845px){
+    .icons{
+        display:block;
+        width: 100%;
+    }
+}
