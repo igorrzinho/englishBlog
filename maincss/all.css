@@ -140,6 +140,7 @@ button{
 }
 input{
     width: 100%;
+    outline:none;
 }
 label{
     font-size: 21px;
